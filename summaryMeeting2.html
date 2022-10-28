@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rangkuman Meeting 2</title>
+  </head>
+  <body>
+    <h1>Rangkuman Meeting 2</h1>
+    <br>
+    <h2>__Sejarah singkat git__</h2>
+    <ul>
+      <li> <b>Linus Torvalds</b>  (Pencipta Linux) membuat project linux menjadi open source.</li>
+      <li>Karena banyak developer yang ikutan, Akhirnya menimbulkan <b>konflik</b> antar developer (Kodenya berubah-berubah)</li>
+      <li>Oleh karena itu Linus membuat <b>Git</b></li>
+      <li>Git berfungsi untuk <b>mengontrol</b> dan <b>mendokumentasikan</b> kode dari project yang dikerjakan</li>
+    </ul>
+    <br>
+    <p>Cara cek versi git -> git --version | My current git version 2.37.2</p>
+    <h2>For 1st timer, setup git </h2>
+    <h4>Ketik di Terminal :</h4>
+    <p>git config --global user.email "you@example.com" </p> 
+     <p>git config --global user.name "Your Name"</p>
+     <br>
+     <br>
+    
+    <h2>__Upload file ke github__</h2>
+     <h4>Masuk ke dalam terminal git bash, lalu ketik perintah :</h4>
+     <p>- git init (Untuk membuat repository pada file lokal yang nantinya ada folder .git)</p>
+     <p>- git remote add origin git@github.com:usernamenya/namaRepositorynya.git (Menghubungkan repository lokal dengan repository remote)</p>
+     <p>- git status (Untuk mengetahui status dari repository lokal)</p>
+     <p>- git add . (Menambahkan semua file baru pada repository yang dipilih)</p>
+     <p>- git commit -m 'isi dengan pesan'(Untuk menyimpan perubahan yang dilakukan, tetapi tidak ada perubahan pada remote repository) </p>
+     <p>- git push origin namabranchnya (Push branch yang telah dibuat ke remote repository)</p>
+     <p>- Balik lagi ke dalam halaman repository di web github, cek perubahannya</p>
+     <br>
+     <br>
+     
+     <h2>__Perintah git lainnya__</h2>
+
+     <p>git remote show origin -> Mengetahui link url</p>
+     <p>git branch -> Menampilkan branch yang sedang aktif</p>
+     <p>git branch -a -> Buat Menampilkan list branch</p>
+     <p>git checkout -b "namaBranchnya" -> Membuat branch baru</p>
+     <p>git checkout namaBranchnya -> Pindah branch yang diinginkan</p>
+     <p>git fetch -> Mengupdate perubahan yang ada dalam repo</p>
+     <p>git clone-> Mengkloning repository</p>
+     <p>Ada 2 cara dalam kloning repository</p>
+     <ol>
+      <li>Menggunakan <b>HTTPS</b> -> git clone https://github.com/usernamenya/namaReponya.git</li>
+      <li>Menggunakan <b>SSH</b> -> git clone git@github.com:usernamenya/namaReponya.git</li>
+     </ol>
+  </body>
+</html>
